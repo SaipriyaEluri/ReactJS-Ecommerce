@@ -1,0 +1,60 @@
+.main_navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .first_navbar{
+        background-color: rgb(44 44 95);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+  
+
+    .first_navbar p {
+        margin: 6px;
+    }
+    .first_navbar .btn{
+        color:white
+    }
+
+    .input-container {
+        position: relative;     
+    }
+    .input-container .form-control{
+      width:100%;
+      padding: 6px 20px 6px 35px;
+    }
+
+    .search_icon {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: black;
+        font-size: larger;
+    }
+}
+.second_navbar{
+    position: sticky;
+    top: 57px;
+    z-index:1;
+
+
+    .second_nav{
+        background-color: #6d6f7199;
+        padding: 10px 20px;
+       
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    a{
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+}

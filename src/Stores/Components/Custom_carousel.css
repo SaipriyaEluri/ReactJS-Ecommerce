@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+.carousel img{
+    width:100%;
+    height:30rem;
+ 
+}
+.background_layout{
+    width:100%;
+    height:30rem;
+    background-color: black;
+}
