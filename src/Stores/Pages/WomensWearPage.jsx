@@ -1,32 +1,18 @@
-import React from "react";
-import Navbar from "../Components/Navbar";
-import { womensWearData } from "../Data/WomensWear";
-import {Link} from "react-router-dom";
+// Mens wear.js
+
+import React from 'react';
+import ProductPage from '../Components/Products';
+import Navbar from '../Components/Navbar';
+import { womensWearData } from '../Data/WomensWear';
+import CommonView from './CommonView';
 
 const WomenswearPage = () => {
-    return (
-        <>
-            <Navbar />
-            <div className="pageSection">
-                {
-                    womensWearData.map((item) => {
-                        return (
-                            <Link to={`/womenswear/${item.id}`}>
-                            <div>
-                               <div>
-                                   <img src={item.image} alt="" />
-                               </div>
-                               <div>
-                                   {item.title} , {item.price}
-                               </div>
-                           </div>
-                           </Link>
-                        )
-                    })
-                }
+  return (
+    <>
+      <Navbar />
+      <CommonView pageTitle="Womens Clothing" data={womensWearData} pageLink="/WomensWear" />
+    </>
+  );
+};
 
-            </div>
-        </>
-    )
-}
 export default WomenswearPage;

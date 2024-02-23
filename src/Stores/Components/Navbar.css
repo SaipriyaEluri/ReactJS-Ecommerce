@@ -4,7 +4,7 @@
     z-index: 1;
 
     .first_navbar{
-        background-color: rgb(44 44 95);
+        background-color: rgb(12 12 49);
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
@@ -39,22 +39,23 @@
 .second_navbar{
     position: sticky;
     top: 57px;
-    z-index:1;
+    z-index:1; 
+}
+
+.second_nav{
+    /* background-color: #6d6f7199; */
+    background-color:  rgb(210, 210, 215);
+    padding: 10px 20px;
+}
 
 
-    .second_nav{
-        background-color: #6d6f7199;
-        padding: 10px 20px;
-       
-    }
-    ul{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-       
-    }
-    a{
-        text-decoration: none;
-        font-size: 0.9rem;
-    }
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; 
+}
+.item {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: red;
 }

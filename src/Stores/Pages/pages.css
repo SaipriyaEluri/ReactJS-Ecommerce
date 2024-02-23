@@ -1,3 +1,16 @@
-.product_selected{
-    
+.pageSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container {
+    width: '200%';
+    height: '70%';
+    background-color: red;
+}
+
+.product-details {
+    padding-left: 2rem;
+    align-items: center;
+    justify-content: center;
 }

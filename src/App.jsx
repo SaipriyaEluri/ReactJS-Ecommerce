@@ -3,7 +3,6 @@ import "./App.css";
 import LandingPage from "./Stores/Pages/LandingPage";
 import { Routes, Route } from "react-router-dom";
 import ElectronicsPage from "./Stores/Pages/ElectronicsPage";
-import KidsWearPage from "./Stores/Pages/KidsWearPage";
 import KitchenPage from "./Stores/Pages/KitchenPage";
 import MensWearPage from "./Stores/Pages/MensWearPage";
 import WomenswearPage from "./Stores/Pages/WomensWearPage";
@@ -12,7 +11,7 @@ import KidsWearView from "./Stores/Views/KidsWearView";
 import KitchenView from "./Stores/Views/KitchenView";
 import MensWearView from "./Stores/Views/MensWearView";
 import WomensWearView from "./Stores/Views/WomensWearView";
-
+import KidsWearPage from "./Stores/Pages/KidsWearPage";
 const App = () => {
   return (
     <div>
@@ -26,7 +25,7 @@ const App = () => {
         <Route path="/electronics/:id" element={<ElectronicsView/>}  />
         <Route path="/kidswear/:id" element={<KidsWearView/>} />
         <Route path="/kitchen/:id" element={<KitchenView/>} />
-        <Route path="/menswear/:id" element={<MensWearView/>} />
+        <Route path="/Menswear/:id" element={<MensWearView/>} />
         <Route path="/womenswear/:id" element={<WomensWearView/>} />
 
       </Routes>

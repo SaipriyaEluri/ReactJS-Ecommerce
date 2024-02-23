@@ -1,34 +1,18 @@
-import React from "react";
-import { electronicsData } from "../Data/Electronics";
-import Navbar from "../Components/Navbar";
-import { kitchenData } from "../Data/Kitchen";
-import { Link } from "react-router-dom";
+// kitchen.js
+
+import React from 'react';
+import ProductPage from '../Components/Products';
+import Navbar from '../Components/Navbar';
+import { kitchenData } from '../Data/Kitchen';
+import CommonView from './CommonView';
 
 const KitchenPage = () => {
-    return (
-        <>
-            <Navbar />
-            <div className="pageSection">
-                {
-                    kitchenData.map((item) => {
-                        return (
-                           <Link to={`/kitchen/${item.id}`}>
-                            <div>
-                                <div>
-                                <img src={item.image} alt="kitche_image" 
-                                style={{height:'100px', width:"200px"}}/>
-                                </div>
-                                <div>
-                                    {item.title} , {item.price}
-                                </div>
-                            </div>
-                           </Link>
-                        )
-                    })
-                }
+  return (
+    <>
+      <Navbar />
+      <CommonView pageTitle="Electronics" data={kitchenData} pageLink="/kitchen" />
+    </>
+  );
+};
 
-            </div>
-        </>
-    )
-}
 export default KitchenPage;
