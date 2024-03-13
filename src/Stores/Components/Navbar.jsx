@@ -1,8 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useCart } from "../useContext/CartContext";
 
 const Navbar = () => {
+
+  const {cartItems} = useCart();
+
   return (
     <>
       <div className="main_navbar">
@@ -21,9 +25,13 @@ const Navbar = () => {
               <button className="btn btn-outline-secondary me-2">
                 SignOut
               </button>
+              <Link to="/cart">
               <button className="btn btn-outline-secondary">
                 <i class="bi bi-cart"></i>
+                <span className="badge">{cartItems.length}</span>
               </button>
+              </Link>
+             
             </div>
           </nav>
         </header>

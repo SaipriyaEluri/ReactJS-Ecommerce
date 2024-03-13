@@ -12,6 +12,7 @@ import KitchenView from "./Stores/Views/KitchenView";
 import MensWearView from "./Stores/Views/MensWearView";
 import WomensWearView from "./Stores/Views/WomensWearView";
 import KidsWearPage from "./Stores/Pages/KidsWearPage";
+import UseCart from "./Stores/useContext/useCart";
 const App = () => {
   return (
     <div>
@@ -27,7 +28,7 @@ const App = () => {
         <Route path="/kitchen/:id" element={<KitchenView/>} />
         <Route path="/Menswear/:id" element={<MensWearView/>} />
         <Route path="/womenswear/:id" element={<WomensWearView/>} />
-
+        <Route path="/cart" element={<UseCart/>}/>
       </Routes>
     </div>
   )

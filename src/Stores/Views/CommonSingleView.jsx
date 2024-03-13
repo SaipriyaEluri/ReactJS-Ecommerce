@@ -4,6 +4,7 @@ import React from "react";
 import {Link, useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import "./individualproducts.css";
+import { useCart } from "../useContext/CartContext";
 
 
 const CommonSingleView = ({ data }) => {
@@ -16,6 +17,9 @@ const CommonSingleView = ({ data }) => {
   console.log(product.link,'wwwww')
  
   
+  const {cartItems, addToCart} = useCart();
+
+
   if (!product) {
     return <div>Product not found</div>;
   }
@@ -91,6 +95,7 @@ const CommonSingleView = ({ data }) => {
                 style={{
                   backgroundColor: "rgb(44 44 95)",
                 }}
+                onClick={() => addToCart(product)}
               >
                 ADD TO CART{" "}
               </button>
